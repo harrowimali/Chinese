@@ -2,21 +2,147 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Chinese by harrowimali</title>
+    <title>Chinese by: Ali Malik</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+      <script src="http://www.helloimali.me/shutelanding/css/bootstrap.css"></script> 
+      <style>      
+      body,html{
+            background-color: #2c3e50;
+            height: 100%;
+            
+        }
+        
+        .main{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            
+        }
+        
+        #container {
+            position: absolute;
+        }
+        
+        
+        .main h1{
+            text-align: center;
+            margin-top: 10%;
+            left: 50%;
+            font-size: 120px;
+            font-weight: 700;
+        }
+        
+        h1{
+            color:#2ecc71;
+            font-family: 'Lato', sans-serif;
+
+        }
+        
+        h2,h3{
+            font-family: 'Lato', sans-serif;
+        }  
+        
+        .pg2{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            background-color: #2980b9;
+            z-index: 1;
+box-shadow: rgba(0,0,0,0.5) 0px 4px 5px, inset rgba(0,0,0,0.5) 0px -3px 4px;
+    border-radius: 20px;
+            padding:20px;
+            -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+            color:#2c3e50;
+        }
+        
+        .pg2:hover{
+            background-color:#3498db;
+            margin-left: 20px;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        
+        }
+        
+        .pg2 h2{
+        text-align: center;
+            font-weight: 800;
+        }
+        
+        
+        #pg22{
+        background-color: #2ecc71;
+        }
+        
+        #particles-js{
+            z-index: -1;
+        }
+        
+        .footer{
+            margin: 40px;
+        }
+        
+        #button{
+            background-color: #2ecc71;
+            text-align: center;
+            padding:10px;
+            border: 5px solid #2ecc71;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            
+        }
+        #button h1{
+        font-weight: 600;
+            color: #2c3e50; 
+            
+        }
+        
+        #button:hover{
+            border: 5px solid #2c3e50;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            
+        }
+          
+        #map {
+        width: 100%;
+        height: 500px;
+            z-index: 100;
+      }
+      
+      </style>
+       
+      
+      
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Chinese</h1>
-      <h2 class="project-tagline">你好 &lt;3</h2>
-      <a href="https://github.com/harrowimali/Chinese" class="btn">View on GitHub</a>
-      <a href="https://github.com/harrowimali/Chinese/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/harrowimali/Chinese/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+      
+      <div class= main>
+        <div class="container">
+            <div class="animated fadeInDown">
+                <h1>我的镇 <br> Wǒ de zhèn <br> My town</h1>
+            </div>
+        </div>
+</div>
+    
+<div style="color: rgba(0,0,0,0.0);"><div id="particles-js">
+<p>This is hidden text!</p>
+    </div></div>
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <div class="container" id="map"></div>
 
     <section class="main-content">
       <h3>
@@ -51,7 +177,30 @@
       </footer>
 
     </section>
-
-  
+      
+      <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(41.059579, -74.094032),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+      
+      <script src="http://www.helloimali.me/shutelanding/js/particles.min.js"></script>    
+        <script type='text/javascript'>
+            
+        particlesJS("particles-js", {
+            
+            "particles":{
+                "number":{"value":137,"density":{"enable":true,"value_area":710.2328774690454}},"color":{"value":"#2ecc71"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":8.017060304327615,"direction":"top","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);
+            
+    </script>   
+      
+      
   </body>
 </html>
